@@ -1,2 +1,203 @@
+html {
+  box-sizing: border-box;
+}
 
-/*# sourceMappingURL=style.css.map *//*# sourceMappingURL=style.css.map */
+*, ::before, ::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Quicksand", sans-serif;
+  color: #242424;
+  text-align: center;
+}
+
+.logo {
+  width: 100%;
+  max-width: 80px;
+}
+
+.main-content {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  font-size: 76px;
+  font-family: "Italiana", serif;
+  font-weight: normal;
+  margin-bottom: 0;
+  margin-top: 30px;
+}
+
+h2 {
+  font-size: 36px;
+  color: black;
+  font-family: "Italianno", cursive;
+  font-weight: normal;
+  margin-top: 0;
+}
+
+.h2-floral:before,
+.h2-floral:after {
+  content: "";
+  height: 1px;
+  display: inline-block;
+  width: 40px;
+  background-color: #797878;
+  margin: 10px 25px;
+}
+
+.h2-original {
+  margin: 40px 0;
+  font-size: 50px;
+}
+
+.h2-aboutme {
+  font-size: 50px;
+}
+
+.h2-floral {
+  font-size: 42px;
+}
+
+.h2-order {
+  margin: 40px 0 20px 0;
+  font-size: 50px;
+}
+
+.menu {
+  list-style: none;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu li {
+  display: inline-block;
+  padding: 0 25px;
+  font-size: 18px;
+}
+
+.mainpage-services img {
+  width: 100%;
+  max-width: 240px;
+  box-shadow: #c7c5c5 2px 2px 3px;
+}
+
+.mainpage-services {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 60px;
+}
+
+.mainpage-values {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.attitude img, .originality img, .profesionality img {
+  max-width: 240px;
+  width: 100%;
+  box-shadow: #c7c5c5 2px 2px 3px;
+}
+
+.attitude p, .originality p, .profesionality p {
+  margin: 0 30px 20px 30px;
+}
+
+.attitude, .originality, .profesionality {
+  max-width: 300px;
+  width: 100%;
+}
+
+.want-flowers, .submit {
+  padding: 12px 40px;
+  margin: 20px 0 30px 0;
+  background-color: #eeeded;
+  border: 1px solid #e2e1e1;
+  box-shadow: #c7c5c5 2px 2px 3px;
+  font-size: 18px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.mainpage-values h3, .mainpage-services h3 {
+  margin-top: 0;
+}
+
+.aboutme img {
+  width: 100%;
+  max-width: 300px;
+  box-shadow: #c7c5c5 2px 2px 3px;
+}
+
+.aboutme p {
+  margin-bottom: 30px;
+}
+
+.aboutme {
+  margin-bottom: 30px;
+}
+
+.adress h2, .contact h2, .social h2, .open-hours h2 {
+  margin-bottom: 0;
+  margin-top: 15px;
+}
+
+.contact-contactform h2 {
+  padding-top: 15px;
+}
+
+.contact-hours-map-wrap, .contact-social-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  box-shadow: rgba(236, 235, 235, 0.89) 0px 0px 4px 1px;
+  margin-bottom: 50px;
+}
+
+.contact-contactform {
+  box-shadow: #ecebeb 0px 0px 8px 2px;
+  margin-bottom: 50px;
+}
+
+.contact-hours-map-wrap h2, .contact-social-wrap h2, .contact-contactform h2 {
+  font-size: 42px;
+}
+
+.contact-flower {
+  width: 370px;
+  height: 230px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(2, 300px);
+  grid-template-rows: repeat(3, auto);
+  justify-content: center;
+  gap: 20px;
+}
+
+.form-field > label {
+  display: block;
+}
+
+.form-field input, .form-field textarea {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #a5a4a4;
+}
+
+.form-field textarea {
+  width: 620px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,35 +1,103 @@
 
 <!-- header ze šablony -->
 
-<!-- hero-pic-->
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MD Creativ - floristické práce</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Italianno&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<header>
+
+    
+    <h1>MD CREATIV</h1>
+    
+    <h2 class="h2-floral">Floristické práce Matěj Doležal</h2>
+    
+    <!-- Menu -->  
+    
+    <ul class="menu">
+    <li><a href="/">Úvod</a></li>
+    <li><a href="/o-mne/">O mně</a></li>
+    <li><a href="/sluzby/">Služby</a></li>
+    <li><a href="/galerie/">Moje tvorba</a></li>
+    <li><a href="/reference/">Reference</a></li>
+    <li><a href="/kontakt/">Kontakt</a></li>
+    </ul>
+    
+    
+    </header>
+
+
+<div class="main-content">  <!-- začátek main-content - do šablony-->
+
+<div class="contact-hours-map-wrap">
+
 
 <div class="adress">
-Kde mě najdete?
-Matěj Doležal
-Floristické práce MD creativ
-Smetanovo nám. 62
+<h2>Adresa</h2>
+MD CREATIV<br>
+Floristické práce Matěj Doležal<br>
+Smetanovo nám. 62<br>
 570 01 Litomyšl
-</div>
-<!-- mapa-->
-
-<div class="contact">
-Kontaktní údaje
-Telefon: +420 604 920 580
-E-mail: dolezal.matej@email.cz
 </div>
 
 <div class="open-hours">
-Otevírací doba
-Po-Pá: 9:00–⁠17:00
-So: 9:00–⁠12:00
-Ne: zavřeno
+<h2>Otevírací doba</h2>
+Pondělí-Pátek: 9:00–⁠17:00<br>
+Sobota: 9:00–⁠12:00<br>
+Neděle: zavřeno
 </div>
 
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2571.539696156877!2d16.310838701327516!3d49.86989068483495!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470dedb6dae5b0f7%3A0xae2adca5156e570c!2sMD%20creativ!5e0!3m2!1scs!2scz!4v1621001437101!5m2!1scs!2scz" width="370" height="230" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+
+<!----------------     konec divu contact-hours-wrap     ------------------>
+
+
+
+<div class="contact-social-wrap">
+
+<div class="contact">
+<h2>Kontaktní údaje</h2>
+Telefon:<br>
++420 604 920 580<br>
+
+E-mail:<br>
+dolezal.matej@email.cz
+</div>
+
+
 <div class="social">
-Sledujte mě na Facebooku a Instagramu
+<h2>Sociální sítě</h2>
 <!-- loga-->
 </div>
 
+<img class="contact-flower" src="images/prilezitostni.jpg" alt="Kytky">
+
+</div>
+
+<!----------------     konec divu contact-social-wrap     ------------------>
+
+
+<div class="contact-contactform">
+<h2>Napište mi</h2>
 <form class="contact-form" action="" method="POST">
 
 <input
@@ -38,11 +106,14 @@ name="_redirect"
 value="https://czechitas.cz">
 
 
-<h3>Napište mi</h3>
+<div class="form-field">
+    <label for="jmeno">Jméno*</label>
+    <input type="text" name="jmeno" id="jmeno" required>
+</div>
 
 <div class="form-field">
-    <label for="jmeno">Jméno a příjmení *</label>
-    <input type="text" name="jmeno" id="jmeno" required>
+    <label for="jmeno">Příjmení*</label>
+    <input type="text" name="jmeno" id="prijmeni" required>
 </div>
 
 <div class="form-field">
@@ -55,11 +126,18 @@ value="https://czechitas.cz">
     <input type="tel" name="telefon" id="telefon">
 </div>
 
-<div class="form-field">
-    <label for="zprava">Vaše zpráva</label>
-    <textarea name="zprava" id="zprava" cols="30" rows="10"></textarea>
+<div class="form-field" id="form">
+    <label for="zprava">Vaše zpráva*</label>
+    <textarea name="zprava" id="zprava" cols="60" rows="10"></textarea>
 </div>
 
-<button type="submit">Odeslat</button>
-
 </form>
+
+<button class="submit" type="submit">Odeslat</button>
+
+</div>     <!-- -------- konec divu contact-contactform ----------->
+
+
+</div>  <!-- konec main-content - do šablony-->
+
+</html>

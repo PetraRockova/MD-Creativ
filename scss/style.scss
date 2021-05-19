@@ -1,1 +1,215 @@
-$secondary-color: #F6F1F0;
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+
+$break-color: black;
+$h1-font: 'Italiana', serif;
+$h2-font: 'Italianno', cursive;
+$body-font:'Quicksand', sans-serif;
+$shadow: rgb(199, 197, 197) 2px 2px 3px;
+
+body {
+margin: 0;
+font-size: 16px;
+line-height: 1.5;
+font-family: $body-font;
+color: #242424;
+text-align: center;
+}
+
+// úvodní stránka
+
+.logo{
+width: 100%;
+max-width: 80px;
+}
+
+.main-content{
+max-width: 1000px;
+margin-left: auto;
+margin-right: auto;
+}
+
+
+h1{
+font-size: 76px;
+font-family: $h1-font;
+font-weight: normal;
+margin-bottom: 0;
+margin-top: 30px;
+}
+
+h2{
+font-size: 36px;  // asi budu muset smazat font size, každé h2 bude mít jiné
+color: $break-color;
+font-family: $h2-font;
+font-weight: normal;
+margin-top: 0;
+}
+
+.h2-floral:before,
+.h2-floral:after {
+  content: "";
+  height: 1px;
+  display: inline-block;
+  width: 40px;
+  background-color: rgb(121, 120, 120);
+  margin: 10px 25px;
+}
+
+.h2-original{
+margin: 40px 0;
+font-size: 50px;
+}
+
+.h2-aboutme{
+  font-size: 50px;
+}
+
+.h2-floral{
+font-size: 42px;
+}
+
+.h2-order{
+margin: 40px 0 20px 0;
+font-size: 50px;
+}
+
+.menu {
+list-style: none;
+text-transform: uppercase;
+margin-bottom: 50px;
+margin-top: 50px;
+}
+
+.menu a{
+    text-decoration: none;
+color: black;}
+
+.menu li{
+display: inline-block;
+padding: 0 25px;
+font-size: 18px;
+}
+
+.mainpage-services img{
+  width: 100%;
+max-width: 240px;
+box-shadow: $shadow;
+}
+
+.mainpage-services{
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 10px;
+margin-bottom: 60px;
+}
+
+.mainpage-values{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 10px;
+}
+
+.attitude img, .originality img, .profesionality img{
+max-width: 240px;
+width: 100%;
+ box-shadow: $shadow;
+}
+
+.attitude p, .originality p, .profesionality p{
+margin: 0 30px 20px 30px;
+}
+
+.attitude, .originality, .profesionality{
+max-width: 300px;
+width: 100%;
+}
+
+.want-flowers, .submit{
+padding: 12px 40px;
+margin: 20px 0 30px 0;
+background-color: rgb(238, 237, 237);
+border: 1px solid rgb(226, 225, 225);
+box-shadow: $shadow;
+font-size: 18px;
+font-family: $body-font;
+}
+
+.mainpage-values h3, .mainpage-services h3{
+margin-top: 0;
+}
+
+
+
+// Stránka o mě 
+
+.aboutme img {
+width: 100%;
+max-width: 300px;
+box-shadow: $shadow;
+}
+
+.aboutme p{
+margin-bottom: 30px;
+}
+
+.aboutme{
+margin-bottom: 30px;
+}
+
+
+// Kontakt
+
+.adress h2, .contact h2, .social h2, .open-hours h2{
+  margin-bottom: 0;
+  margin-top: 15px;
+}
+
+.contact-contactform h2{
+  padding-top: 15px;
+}
+
+.contact-hours-map-wrap, .contact-social-wrap {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+box-shadow: rgb(236, 235, 235, 0.89) 0px 0px 4px 1px;
+margin-bottom: 50px;
+}
+
+.contact-contactform{
+box-shadow: rgb(236, 235, 235) 0px 0px 8px 2px;
+margin-bottom: 50px;
+}
+
+.contact-hours-map-wrap h2, .contact-social-wrap h2, .contact-contactform h2{
+font-size: 42px;
+}
+
+
+.contact-flower{
+width: 370px;
+height: 230px;
+}
+
+form{
+display: grid;
+grid-template-columns: repeat(2, 300px);
+grid-template-rows: repeat(3, auto);
+justify-content: center;
+gap: 20px;
+}
+
+.form-field > label{
+display: block;
+}
+
+.form-field input, .form-field textarea{
+padding: 10px;
+width: 300px;
+border: 1px solid rgb(165, 164, 164);
+}
+
+.form-field textarea{
+  width: 620px;
+}
+
