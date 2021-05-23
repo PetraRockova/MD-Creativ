@@ -1,49 +1,7 @@
-<!DOCTYPE html>
-<html lang="cs">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MD Creativ - floristické práce</title>
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Italianno&display=swap" rel="stylesheet">
-
-
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/style.css">
-
-</head>
-<body>
-
-<!--logo a Menu -->  
-<div class="navigation">
-    <img class="logo" src="images/logo.png" alt="Logo MD Creativ">
-    
-    
-    <ul class="menu">
-    <li><a href="/">Úvod</a></li>
-    <li><a href="/o-mne/">O mně</a></li>
-    <li><a href="/sluzby/">Služby</a></li>
-    <li><a href="/galerie/">Moje tvorba</a></li>
-    <li><a href="/kontakt/">Kontakt</a></li>
-    </ul>
-    </div>   <!-- konec divu navigation-->
-
-<header>
-
-
-<h1>MD CREATIV</h1>
-
-<h2 class="h2-floral">Floristické práce Matěj Doležal</h2>
-</header>
-
-
-
-
-<div class="main-content">  <!-- začátek main-content - do šablony-->
+--- 
+layout: hlavni-sablona.njk 
+title: MD Creativ - floristické práce Matěj Doležal
+---
 
 <div class="hero-info">
 
@@ -53,22 +11,22 @@
 <div class="mainpage-services">
 
 <div class="first-service">
-<img src="images/prilezitostni.jpg" alt="Příležitostní květiny">
+<a href="/sluzby/"><img src="/images/prilezitostni.jpg" alt="Příležitostní květiny"></a>
 <h3>Příležitostní květiny</h3>
 </div>
 
 <div class="second-service">
-<img src="images/svatba.jpg" alt="Svatební kytice">
+<a href="/sluzby/"><img src="/images/svatba.jpg" alt="Svatební kytice"></a>
 <h3>Svatební květiny a servis</h3>
 </div>
 
 <div class="third-service">
-<img src="images/smutecni.jpg" alt="Smuteční kytice">
+<a href="/sluzby/"><img src="/images/smutecni.jpg" alt="Smuteční kytice"></a>
 <h3>Smuteční květiny</h3>
 </div>
 
 <div class="fourth-service">
-<img src="images/firmy.jpg" alt="Firemní kytice">
+<a href="/sluzby/"><img src="/images/firmy.jpg" alt="Firemní kytice"></a>
 <h3>Květinový servis pro firmy</h3>
 </div>
 
@@ -78,19 +36,19 @@
 <div class="mainpage-values">
 
 <div class="attitude">
-<img src="images/attitude.jpg" alt="Květiny">
+<img src="/images/attitude.jpg" alt="Květiny">
 <h3>Osobní přístup</h3>
 <p>Každý zákazník je jedinečný a proto mi záleží na tom, abyste odcházeli s úsměvem na tváři a s dokonalou kyticí, která přesně vyjádří vaše city.</p>
 </div>
 
 <div class="originality">
-    <img src="images/attitude.jpg" alt="Květiny">
+    <img src="/images/attitude.jpg" alt="Květiny">
 <h3>Originalita</h3>
 <p>Květiny jsou moje vášeň a vaše spokojenost je pro mě na prvním místě. Vytvořím vám originální a jedinečnou kytici s duší přesně podle vašeho přání!</p>
 </div>
 
 <div class="profesionality">
-    <img src="images/attitude.jpg" alt="Květiny">
+    <img src="/images/attitude.jpg" alt="Květiny">
 <h3>Profesionalita</h3>
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Pellentesque pretium lectus id turpis. Integer pellentesque quam vel velit. Mauris dictum.</p>
 </div>
@@ -131,19 +89,19 @@ V případě zajištění kompletního servisu je zajištěna doprava na místo 
 <strong> - jméno - </strong>
 </div>
 
-<img class="first-photo" src="images/ref1.jpg" alt="Květiny">
-<img class="second-photo" src="images/ref2.jpg" alt="Květiny">  
-<img class="third-photo" src="images/ref3.jpg" alt="Květiny">
-<img class="fourth-photo" src="images/ref4.jpg" alt="Květiny">
+<img class="first-photo" src="/images/ref1.jpg" alt="Květiny">
+<img class="second-photo" src="/images/ref2.jpg" alt="Květiny">  
+<img class="third-photo" src="/images/ref3.jpg" alt="Květiny">
+<img class="fourth-photo" src="/images/ref4.jpg" alt="Květiny">
 </div>  <!-- konec divu top-refs-->
 
 
 
 <div class="bottom-refs">   <!--   začátek bottom-refs -->
 
-<img class="fifth-photo" src="images/ref5.jpg" alt="Květiny">
-<img class="sixth-photo" src="images/ref6.jpg" alt="Květiny">
-<img class="seventh-photo" src="images/ref7.jpg" alt="Květiny">
+<img class="fifth-photo" src="/images/ref5.jpg" alt="Květiny">
+<img class="sixth-photo" src="/images/ref6.jpg" alt="Květiny">
+<img class="seventh-photo" src="/images/ref7.jpg" alt="Květiny">
 
 <div class="fourth-ref">
 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam asperiores modi veritatis rem possimus natus eius, consectetur expedita cupiditate.</p>
@@ -157,37 +115,3 @@ V případě zajištění kompletního servisu je zajištěna doprava na místo 
 
 </div>  <!-- konec bottom refs -->
 
-
-
-
-
-
-
-</div>  <!-- konec main-content - do šablony-->
-
-<footer>
-Copyright
-</footer>
-
-
-<!--#F6F1F0    #c59d5f-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</body>
-</html>
