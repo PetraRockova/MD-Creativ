@@ -16,26 +16,69 @@ color: #242424;
 text-align: center;
 }
 
-// úvodní stránka
-
-.logo{
-width: 100%;
-max-width: 80px;
-}
-
 .main-content{
 max-width: 1000px;
 margin-left: auto;
 margin-right: auto;
 }
+  
+
+// úvodní stránka - záhlaví
+
+header{
+background-image: linear-gradient(rgba(100, 100, 100, 0.4), rgba(100, 100, 100, 0.4)),
+url(../images/prilezitostni.jpg);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+padding: 70px;  //nevím jestli není blbost, dělat to paddingem, ale height stávkuje
+width: 100%;
+height: 100%;
+}
+
+// menu
+
+.navigation{
+  display: grid;
+  grid-template-columns: 1fr auto;
+  margin: 10px 0;
+  align-items: center;
+  margin-left: 15px;
+  }
+  
+  .menu {
+  list-style: none;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  margin-top: 0;
+  }
+  
+  .menu a{
+      text-decoration: none;
+  color: black;}
+  
+  .menu li{
+  display: inline-block;
+  padding: 0 15px;
+  font-size: 18px;
+  font-weight: bold;
+  }
+
+.logo{
+width: 100%;
+max-width: 50px;
+}
+
 
 
 h1{
-font-size: 76px;
+font-size: 90px;
 font-family: $h1-font;
 font-weight: normal;
 margin-bottom: 0;
-margin-top: 30px;
+margin-top: 0;
+color: white;
+text-shadow: 1px 1px 4px rgb(15 15 15);
 }
 
 h2{
@@ -52,8 +95,9 @@ margin-top: 0;
   height: 1px;
   display: inline-block;
   width: 40px;
-  background-color: rgb(121, 120, 120);
+  background-color: white;
   margin: 10px 25px;
+  box-shadow: 1px 1px 4px rgb(15 15 15);
 }
 
 .h2-original{
@@ -61,12 +105,15 @@ margin: 40px 0;
 font-size: 50px;
 }
 
-.h2-aboutme{
+.h2-aboutme, .h2-reference{
   font-size: 50px;
 }
 
 .h2-floral{
 font-size: 42px;
+color: white;
+margin-bottom: 0;
+text-shadow: 1px 1px 4px rgb(15 15 15);
 }
 
 .h2-order{
@@ -74,25 +121,10 @@ margin: 40px 0 20px 0;
 font-size: 50px;
 }
 
-.menu {
-list-style: none;
-text-transform: uppercase;
-margin-bottom: 50px;
-margin-top: 50px;
-}
+// služby a hodnoty
 
-.menu a{
-    text-decoration: none;
-color: black;}
-
-.menu li{
-display: inline-block;
-padding: 0 25px;
-font-size: 18px;
-}
-
-.mainpage-services img{
-  width: 100%;
+.mainpage-services img, .mainpage-values img{
+width: 100%;
 max-width: 240px;
 box-shadow: $shadow;
 }
@@ -108,22 +140,21 @@ margin-bottom: 60px;
 display: grid;
 grid-template-columns: repeat(3, 1fr);
 gap: 10px;
+justify-items: center;
+margin-bottom: 60px;
 }
 
-.attitude img, .originality img, .profesionality img{
-max-width: 240px;
-width: 100%;
- box-shadow: $shadow;
-}
-
-.attitude p, .originality p, .profesionality p{
-margin: 0 30px 20px 30px;
-}
 
 .attitude, .originality, .profesionality{
-max-width: 300px;
+max-width: 240px;
 width: 100%;
 }
+
+.mainpage-values h3, .mainpage-services h3{
+margin-top: 0;
+}
+
+// tlačítka
 
 .want-flowers, .submit{
 padding: 12px 40px;
@@ -135,8 +166,107 @@ font-size: 18px;
 font-family: $body-font;
 }
 
-.mainpage-values h3, .mainpage-services h3{
-margin-top: 0;
+// reference
+
+.first-ref, .second-ref, .third-ref, .fourth-ref, .fifth-ref{
+width: 450px;
+margin-bottom: 0px;
+}
+
+.top-refs, .bottom-refs p{
+margin: 6px 0;
+}
+
+.top-refs img, .bottom-refs img{
+width: 250px;
+}
+
+.top-refs{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(3, auto);
+gap: 8px;
+}
+
+.bottom-refs{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(2, auto);
+gap: 8px;
+margin-top: 70px;
+}
+
+
+.first-ref, .second-ref, .third-ref{
+grid-column: 1;
+}
+
+.first-ref{
+grid-row: 1;
+align-self:end;
+}
+
+.second-ref{
+grid-row: 2;
+align-self:center;
+}
+
+.third-ref{
+grid-row: 3;
+}
+  
+
+.first-photo{
+grid-column: 2;
+grid-row: 1 / 4;
+align-self: center;
+justify-self: end;
+}
+
+.second-photo{
+grid-column: 3;
+grid-row: 1;
+}
+
+.third-photo{
+grid-column: 3;
+grid-row: 2;
+}
+
+.fourth-photo{
+grid-column: 3;
+grid-row: 3;
+}
+
+.fourth-ref{
+grid-column: 3;
+grid-row: 1;
+align-self: end;
+}
+
+.fifth-ref{
+grid-column: 3;
+grid-row: 2;
+} 
+
+
+.fifth-photo{
+grid-column: 1;
+grid-row: 1;
+align-self: end;
+}
+.sixth-photo{
+grid-column: 1;
+grid-row: 2;
+}
+
+.seventh-photo{
+grid-column: 2;
+grid-row: 1/3;
+}
+
+.fifth-photo, .sixth-photo{
+justify-self: end;
 }
 
 
