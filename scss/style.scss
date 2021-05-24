@@ -91,23 +91,27 @@ margin-top: 0;
 
 .h2-floral:before,
 .h2-floral:after {
-  content: "";
-  height: 1px;
-  display: inline-block;
-  width: 40px;
-  background-color: white;
-  margin: 10px 25px;
-  box-shadow: 1px 1px 4px rgb(15 15 15);
+content: "";
+height: 1px;
+display: inline-block;
+width: 40px;
+background-color: white;
+margin: 10px 25px;
+box-shadow: 1px 1px 4px rgb(15 15 15);
 }
 
 .h2-original{
 margin: 40px 0;
+}
+
+.h2-order, .h2-aboutme, .h2-work{
+margin: 40px 0 20px 0;
+}
+
+.h2-aboutme, .h2-reference, .h2-order, .h2-original, .h2-work{
 font-size: 50px;
 }
 
-.h2-aboutme, .h2-reference{
-  font-size: 50px;
-}
 
 .h2-floral{
 font-size: 42px;
@@ -116,10 +120,7 @@ margin-bottom: 0;
 text-shadow: 1px 1px 4px rgb(15 15 15);
 }
 
-.h2-order{
-margin: 40px 0 20px 0;
-font-size: 50px;
-}
+
 
 // služby a hodnoty
 
@@ -141,7 +142,6 @@ display: grid;
 grid-template-columns: repeat(3, 1fr);
 gap: 10px;
 justify-items: center;
-margin-bottom: 60px;
 }
 
 
@@ -158,7 +158,7 @@ margin-top: 0;
 
 .want-flowers, .submit{
 padding: 12px 40px;
-margin: 20px 0 30px 0;
+margin: 20px 0;
 background-color: rgb(238, 237, 237);
 border: 1px solid rgb(226, 225, 225);
 box-shadow: $shadow;
@@ -167,6 +167,10 @@ font-family: $body-font;
 }
 
 // reference
+
+.h2-reference{
+margin: 20px 0;
+}
 
 .first-ref, .second-ref, .third-ref, .fourth-ref, .fifth-ref{
 width: 450px;
@@ -185,14 +189,14 @@ width: 250px;
 display: grid;
 grid-template-columns: repeat(3, 1fr);
 grid-template-rows: repeat(3, auto);
-gap: 8px;
+gap: 6px;
 }
 
 .bottom-refs{
 display: grid;
 grid-template-columns: repeat(3, 1fr);
 grid-template-rows: repeat(2, auto);
-gap: 8px;
+gap: 6px;
 margin-top: 70px;
 }
 
@@ -288,6 +292,43 @@ margin-bottom: 30px;
 }
 
 
+
+
+// Galerie
+.work-photo img{
+width: 100%;
+}
+
+.work-photo {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: repeat(7, auto);
+gap: 6px;
+}
+
+.five{
+grid-row: 2/4;
+}
+
+.six{
+grid-column: 3 / span 2;
+grid-row: 4 / 6;
+}
+
+.ten{
+grid-column: 2/ span 2;
+grid-row: 2;
+}
+
+.sixteen{
+grid-column: 2;
+grid-row: 5 / 7;
+}
+
+
+
+
+
 // Kontakt
 
 .adress h2, .contact h2, .social h2, .open-hours h2{
@@ -343,3 +384,10 @@ border: 1px solid rgb(165, 164, 164);
   width: 620px;
 }
 
+// footer
+
+footer{
+text-align: center;
+margin: 40px 0 20px 0;
+color: rgb(158, 156, 156);
+}

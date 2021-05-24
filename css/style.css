@@ -93,10 +93,13 @@ h2 {
 
 .h2-original {
   margin: 40px 0;
-  font-size: 50px;
 }
 
-.h2-aboutme, .h2-reference {
+.h2-order, .h2-aboutme, .h2-work {
+  margin: 40px 0 20px 0;
+}
+
+.h2-aboutme, .h2-reference, .h2-order, .h2-original, .h2-work {
   font-size: 50px;
 }
 
@@ -105,11 +108,6 @@ h2 {
   color: white;
   margin-bottom: 0;
   text-shadow: 1px 1px 4px #0f0f0f;
-}
-
-.h2-order {
-  margin: 40px 0 20px 0;
-  font-size: 50px;
 }
 
 .mainpage-services img, .mainpage-values img {
@@ -130,7 +128,6 @@ h2 {
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   justify-items: center;
-  margin-bottom: 60px;
 }
 
 .attitude, .originality, .profesionality {
@@ -144,12 +141,16 @@ h2 {
 
 .want-flowers, .submit {
   padding: 12px 40px;
-  margin: 20px 0 30px 0;
+  margin: 20px 0;
   background-color: #eeeded;
   border: 1px solid #e2e1e1;
   box-shadow: #c7c5c5 2px 2px 3px;
   font-size: 18px;
   font-family: "Quicksand", sans-serif;
+}
+
+.h2-reference {
+  margin: 20px 0;
 }
 
 .first-ref, .second-ref, .third-ref, .fourth-ref, .fifth-ref {
@@ -169,14 +170,14 @@ h2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, auto);
-  gap: 8px;
+  gap: 6px;
 }
 
 .bottom-refs {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, auto);
-  gap: 8px;
+  gap: 6px;
   margin-top: 70px;
 }
 
@@ -265,6 +266,36 @@ h2 {
   margin-bottom: 30px;
 }
 
+.work-photo img {
+  width: 100%;
+}
+
+.work-photo {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(7, auto);
+  gap: 6px;
+}
+
+.five {
+  grid-row: 2/4;
+}
+
+.six {
+  grid-column: 3/span 2;
+  grid-row: 4/6;
+}
+
+.ten {
+  grid-column: 2/span 2;
+  grid-row: 2;
+}
+
+.sixteen {
+  grid-column: 2;
+  grid-row: 5/7;
+}
+
 .adress h2, .contact h2, .social h2, .open-hours h2 {
   margin-bottom: 0;
   margin-top: 15px;
@@ -315,4 +346,10 @@ form {
 
 .form-field textarea {
   width: 620px;
+}
+
+footer {
+  text-align: center;
+  margin: 40px 0 20px 0;
+  color: #9e9c9c;
 }/*# sourceMappingURL=style.css.map */
