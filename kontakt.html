@@ -43,7 +43,8 @@ dolezal.matej@email.cz
 
 <div class="social">
 <h2>Sociální sítě</h2>
-<!-- loga-->
+<a href="https://www.facebook.com/MDcreativLitomysl/" target="_blank"> <img src="/images/fb.png" alt="Logo FB"></a>
+<a href="https://www.instagram.com/mdcreativ_litomysl/?hl=cs" target="_blank"><img src="/images/ig.png" alt="Logo IG"></a>
 </div>
 
 <img class="contact-flower" src="/images/prilezitostni.jpg" alt="Kytky">
@@ -63,29 +64,29 @@ name="_redirect"
 value="https://czechitas.cz">
 
 
-<div class="form-field">
-    <label for="jmeno">Jméno*</label>
+<div class="form-field-left">
+    <label for="jmeno">Jméno <span class="required">*</span></label>
     <input type="text" name="jmeno" id="jmeno" required>
 </div>
 
-<div class="form-field">
-    <label for="jmeno">Příjmení*</label>
+<div class="form-field-right">
+    <label for="jmeno">Příjmení <span class="required">*</span></label>
     <input type="text" name="jmeno" id="prijmeni" required>
 </div>
 
-<div class="form-field">
-    <label for="email">E-mail *</label>
+<div class="form-field-left">
+    <label for="email">E-mail <span class="required">*</span></label>
     <input type="email" name="email" id="email" required>
 </div>
 
-<div class="form-field">
+<div class="form-field-right">
     <label for="telefon">Telefon</label>
     <input type="tel" name="telefon" id="telefon">
 </div>
 
-<div class="form-field" id="form">
-    <label for="zprava">Vaše zpráva*</label>
-    <textarea name="zprava" id="zprava" cols="60" rows="10"></textarea>
+<div class="form-field-area" id="form">
+    <label for="zprava">Vaše zpráva <span class="required">*</span></label>
+    <textarea name="zprava" id="zprava" cols="0" rows="0"></textarea>
 </div>
 
 </form>
@@ -95,6 +96,3 @@ value="https://czechitas.cz">
 </div>     <!-- -------- konec divu contact-contactform ----------->
 
 
-</div>  <!-- konec main-content - do šablony-->
-
-</html>
