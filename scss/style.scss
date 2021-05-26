@@ -54,19 +54,20 @@ height: 100%;
   }
   
   .menu a{
-      text-decoration: none;
-  color: black;}
+  text-decoration: none;
+  color: black;
+ 
+}
   
   .menu li{
   display: inline-block;
   padding: 0 15px;
-  font-size: 18px;
- 
+  font-size: 20px;
   }
 
 .logo{
 width: 100%;
-max-width: 50px;
+max-width: 60px;
 }
 
 
@@ -82,11 +83,16 @@ text-shadow: 1px 1px 4px rgb(15 15 15);
 }
 
 h2{
-font-size: 36px;  // asi budu muset smazat font size, každé h2 bude mít jiné
+font-size: 50px;
 color: $break-color;
 font-family: $h2-font;
 font-weight: normal;
 margin-top: 0;
+}
+
+h3{
+margin-top: 0;
+margin-bottom: 16px;
 }
 
 .h2-floral:before,
@@ -104,14 +110,9 @@ box-shadow: 1px 1px 4px rgb(15 15 15);
 margin: 40px 0;
 }
 
-.h2-order, .h2-aboutme, .h2-work{
+.h2-order, .h2-aboutme, .h2-work, .h2-services, .h2-reference{
 margin: 40px 0 20px 0;
 }
-
-.h2-aboutme, .h2-reference, .h2-order, .h2-original, .h2-work{
-font-size: 50px;
-}
-
 
 .h2-floral{
 font-size: 42px;
@@ -121,13 +122,17 @@ text-shadow: 1px 1px 4px rgb(15 15 15);
 }
 
 
-
 // služby a hodnoty
 
-.mainpage-services img, .mainpage-values img{
+.mainpage-services img{
 width: 100%;
 max-width: 240px;
 box-shadow: $shadow;
+}
+
+.mainpage-values img{
+  width: 100%;
+  max-width: 370px;
 }
 
 .mainpage-services{
@@ -150,13 +155,10 @@ max-width: 240px;
 width: 100%;
 }
 
-.mainpage-values h3, .mainpage-services h3{
-margin-top: 0;
-}
 
 // tlačítka
 
-.want-flowers, .submit{
+.submit{
 padding: 12px 40px;
 margin: 20px 0;
 background-color: rgb(238, 237, 237);
@@ -166,11 +168,12 @@ font-size: 18px;
 font-family: $body-font;
 }
 
+.submit:hover{
+background-color:rgb(211, 211, 211);
+}
+
 // reference
 
-.h2-reference{
-margin: 20px 0;
-}
 
 .first-ref, .second-ref, .third-ref, .fourth-ref, .fifth-ref{
 width: 450px;
@@ -182,7 +185,7 @@ margin: 6px 0;
 }
 
 .top-refs img, .bottom-refs img{
-width: 250px;
+width: 240px;
 }
 
 .top-refs{
@@ -197,7 +200,7 @@ display: grid;
 grid-template-columns: repeat(3, 1fr);
 grid-template-rows: repeat(2, auto);
 gap: 4px;
-margin-top: 70px;
+margin-top: 40px;
 }
 
 
@@ -225,6 +228,7 @@ grid-column: 2;
 grid-row: 1 / 4;
 align-self: center;
 justify-self: end;
+padding-bottom: 20px;
 }
 
 .second-photo{
@@ -277,10 +281,10 @@ justify-self: end;
 
 // Stránka o mě 
 
-.aboutme img {
+.aboutme img{
 width: 100%;
 max-width: 300px;
-box-shadow: $shadow;
+box-shadow: $shadow;  // #c7c5c5 0px 0px 3px 1px
 }
 
 .aboutme p{
@@ -291,8 +295,39 @@ margin-bottom: 30px;
 margin-bottom: 30px;
 }
 
+// služby
+
+.all-services img {
+  width: 100%;
+  max-width: 400px;
+  box-shadow: $shadow;  // #c7c5c5 0px 0px 3px 1px
+  }
+
+.wedd, .company, .occasionall, .funeral {
+margin-bottom: 80px;
+gap: 15px;
+justify-items: center;
+justify-content: center;
+}
 
 
+.occasionall, .funeral {
+display: grid;
+grid-template-columns: 350px 400px;
+}
+
+.wedd, .company{
+display: grid;
+grid-template-columns: 400px 350px;
+}
+
+.occasionall p, .wedd p, .funeral p, .company p{
+margin: 0;
+}
+
+.text{
+align-self:center;
+}
 
 // Galerie
 .work-photo img{
@@ -401,6 +436,13 @@ justify-self: end;
 justify-self: center;
 grid-column: 1 / 3;
 }
+
+.form-field-left input:focus, .form-field-right input:focus, .form-field-area textarea:focus{
+border: 1px solid rgb(56, 56, 56);
+outline: 0;
+}
+
+
 
 .required{
 color: rgb(231, 2, 2);
