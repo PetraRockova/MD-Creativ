@@ -2,12 +2,14 @@
 
 .submit{
 padding: 12px 40px;
-margin: 20px 0;
+margin-bottom: 20px;
 background-color: rgb(238, 237, 237);
 border: 1px solid rgb(226, 225, 225);
 box-shadow: webstyle.$shadow;
 font-size: 18px;
 font-family: webstyle.$body-font;
+grid-column: 1/3;
+justify-self: center;
 }
 
 .submit:hover{

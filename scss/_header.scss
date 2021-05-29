@@ -31,14 +31,23 @@ margin-top: 0;
 .menu a{
 text-decoration: none;
 color: black;
-
 }
 
 .menu li{
 display: inline-block;
 padding: 0 15px;
 font-size: 20px;
+text-shadow: 1px 1px 1px #eae8e8;
 }
+
+.menu a:active{
+border-bottom: 1px solid webstyle.$break-color;
+}
+
+.menu a:hover {
+border-bottom: 1px solid webstyle.$break-color;
+}
+    
 
 .logo{
 width: 100%;
@@ -52,8 +61,6 @@ margin-bottom: 0;
 text-shadow: 1px 1px 4px rgb(15 15 15);
 }
 
-
-
 .h2-floral:before,
 .h2-floral:after {
 content: "";
@@ -64,3 +71,9 @@ background-color: white;
 margin: 10px 25px;
 box-shadow: 1px 1px 4px rgb(15 15 15);
 }
+
+
+.thanks a{
+display: none;
+}
+    

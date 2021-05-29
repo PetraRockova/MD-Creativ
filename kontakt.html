@@ -56,12 +56,13 @@ dolezal.matej@email.cz
 
 <div class="contact-contactform">
 <h2>Napište mi</h2>
-<form class="contact-form" action="" method="POST">
+<form class="contact-form" action="https://submit-form.com/ifbwulh0" method="POST">
 
 <input
 type="hidden"
-name="_redirect"
-value="https://czechitas.cz">
+name="_feedback.success.title"
+value="Formulář byl úspěšně odeslán!"
+target="_blank">
 
  
 <div class="form-field">
@@ -71,7 +72,7 @@ value="https://czechitas.cz">
 
 <div class="form-field">
     <label for="jmeno">Příjmení <span class="required">*</span></label>
-    <input type="text" name="jmeno" id="prijmeni" required>
+    <input type="text" name="prijmeni" id="prijmeni" required>
 </div>
 
 <div class="form-field">
@@ -89,9 +90,11 @@ value="https://czechitas.cz">
     <textarea name="zprava" id="zprava"  cols="0" rows="50"></textarea>
 </div>
 
+<button class="submit" type="submit">Odeslat</button>
+
 </form>
 
-<button class="submit" type="submit">Odeslat</button>
+
 
 </div>     <!-- -------- konec divu contact-contactform ----------->
 
