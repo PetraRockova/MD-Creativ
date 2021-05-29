@@ -1,0 +1,33 @@
+@use 'webstyle';
+
+.work-photo img{
+width: 100%;
+box-shadow: webstyle.$shadow;
+}
+
+.work-photo {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: repeat(7, auto);
+gap: 4px;
+}
+
+.five{
+grid-row: 2/4;
+}
+
+.six{
+grid-column: 3 / span 2;
+grid-row: 4 / 6;
+}
+
+.ten{
+grid-column: 2/ span 2;
+grid-row: 2;
+}
+
+.sixteen{
+grid-column: 2;
+grid-row: 5 / 7;
+}
+    

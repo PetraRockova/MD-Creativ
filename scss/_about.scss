@@ -1,0 +1,21 @@
+@use 'webstyle';
+
+.aboutme img{
+width: 100%;
+align-self: end;
+box-shadow: webstyle.$shadow;  
+}
+
+.aboutme p{
+margin-bottom: 30px;
+}
+
+.aboutme{
+margin-bottom: 30px;
+}
+
+.aboutme-photo{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 6px;
+}

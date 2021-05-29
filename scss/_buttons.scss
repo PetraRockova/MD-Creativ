@@ -1,0 +1,15 @@
+@use 'webstyle';
+
+.submit{
+padding: 12px 40px;
+margin: 20px 0;
+background-color: rgb(238, 237, 237);
+border: 1px solid rgb(226, 225, 225);
+box-shadow: webstyle.$shadow;
+font-size: 18px;
+font-family: webstyle.$body-font;
+}
+
+.submit:hover{
+background-color:rgb(211, 211, 211);
+}

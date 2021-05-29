@@ -1,0 +1,31 @@
+@use 'webstyle';
+
+.mainpage-services img{
+width: 100%;
+box-shadow: webstyle.$shadow;
+}
+
+.mainpage-values img{
+    width: 100%;
+}
+
+.mainpage-services{
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 10px;
+margin-bottom: 60px;
+}
+
+.mainpage-values{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 10px;
+justify-items: center;
+}
+
+
+.attitude, .originality, .profesionality{
+max-width: 240px;
+width: 100%;
+}
+    

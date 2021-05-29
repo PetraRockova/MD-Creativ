@@ -21,6 +21,43 @@ main {
   margin-right: auto;
 }
 
+h1 {
+  font-size: 90px;
+  font-family: "Italiana", serif;
+  font-weight: normal;
+  margin-bottom: 0;
+  margin-top: 0;
+  color: white;
+  text-shadow: 1px 1px 4px #0f0f0f;
+}
+
+h2 {
+  font-size: 50px;
+  color: #ec0a0a;
+  font-family: "Italianno", cursive;
+  font-weight: normal;
+  margin-top: 0;
+}
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.h2-original {
+  margin: 40px 0;
+}
+
+.h2-order, .h2-aboutme, .h2-work, .h2-services, .h2-reference {
+  margin: 40px 0 20px 0;
+}
+
+footer {
+  text-align: center;
+  margin: 40px 0 20px 0;
+  color: #9e9c9c;
+}
+
 header {
   background-image: linear-gradient(rgba(100, 100, 100, 0.4), rgba(100, 100, 100, 0.4)), url(../images/prilezitostni.jpg);
   background-size: cover;
@@ -62,27 +99,11 @@ header {
   max-width: 60px;
 }
 
-h1 {
-  font-size: 90px;
-  font-family: "Italiana", serif;
-  font-weight: normal;
-  margin-bottom: 0;
-  margin-top: 0;
+.h2-floral {
+  font-size: 42px;
   color: white;
+  margin-bottom: 0;
   text-shadow: 1px 1px 4px #0f0f0f;
-}
-
-h2 {
-  font-size: 50px;
-  color: black;
-  font-family: "Italianno", cursive;
-  font-weight: normal;
-  margin-top: 0;
-}
-
-h3 {
-  margin-top: 0;
-  margin-bottom: 16px;
 }
 
 .h2-floral:before,
@@ -94,63 +115,6 @@ h3 {
   background-color: white;
   margin: 10px 25px;
   box-shadow: 1px 1px 4px #0f0f0f;
-}
-
-.h2-original {
-  margin: 40px 0;
-}
-
-.h2-order, .h2-aboutme, .h2-work, .h2-services, .h2-reference {
-  margin: 40px 0 20px 0;
-}
-
-.h2-floral {
-  font-size: 42px;
-  color: white;
-  margin-bottom: 0;
-  text-shadow: 1px 1px 4px #0f0f0f;
-}
-
-.mainpage-services img {
-  width: 100%;
-  box-shadow: #c7c5c5 2px 2px 3px;
-}
-
-.mainpage-values img {
-  width: 100%;
-}
-
-.mainpage-services {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-  margin-bottom: 60px;
-}
-
-.mainpage-values {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  justify-items: center;
-}
-
-.attitude, .originality, .profesionality {
-  max-width: 240px;
-  width: 100%;
-}
-
-.submit {
-  padding: 12px 40px;
-  margin: 20px 0;
-  background-color: #eeeded;
-  border: 1px solid #e2e1e1;
-  box-shadow: #c7c5c5 2px 2px 3px;
-  font-size: 18px;
-  font-family: "Quicksand", sans-serif;
-}
-
-.submit:hover {
-  background-color: lightgray;
 }
 
 .texts {
@@ -246,26 +210,6 @@ h3 {
   justify-self: end;
 }
 
-.aboutme img {
-  width: 100%;
-  align-self: end;
-  box-shadow: #c7c5c5 2px 2px 3px;
-}
-
-.aboutme p {
-  margin-bottom: 30px;
-}
-
-.aboutme {
-  margin-bottom: 30px;
-}
-
-.aboutme-photo {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 6px;
-}
-
 .all-services img {
   width: 100%;
   max-width: 400px;
@@ -295,6 +239,26 @@ h3 {
 
 .text {
   align-self: center;
+}
+
+.aboutme img {
+  width: 100%;
+  align-self: end;
+  box-shadow: #c7c5c5 2px 2px 3px;
+}
+
+.aboutme p {
+  margin-bottom: 30px;
+}
+
+.aboutme {
+  margin-bottom: 30px;
+}
+
+.aboutme-photo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
 }
 
 .work-photo img {
@@ -397,12 +361,53 @@ h3 {
   width: 100%;
 }
 
+.form-field input:focus, .form-field-area textarea:focus {
+  border: 1px solid #383838;
+  outline: 0;
+}
+
 .required {
   color: #e70202;
 }
 
-footer {
-  text-align: center;
-  margin: 40px 0 20px 0;
-  color: #9e9c9c;
+.submit {
+  padding: 12px 40px;
+  margin: 20px 0;
+  background-color: #eeeded;
+  border: 1px solid #e2e1e1;
+  box-shadow: #c7c5c5 2px 2px 3px;
+  font-size: 18px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.submit:hover {
+  background-color: lightgray;
+}
+
+.mainpage-services img {
+  width: 100%;
+  box-shadow: #c7c5c5 2px 2px 3px;
+}
+
+.mainpage-values img {
+  width: 100%;
+}
+
+.mainpage-services {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 60px;
+}
+
+.mainpage-values {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  justify-items: center;
+}
+
+.attitude, .originality, .profesionality {
+  max-width: 240px;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

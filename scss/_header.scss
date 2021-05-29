@@ -1,0 +1,66 @@
+@use 'webstyle';
+
+header{
+background-image: linear-gradient(rgba(100, 100, 100, 0.4), rgba(100, 100, 100, 0.4)),
+url(../images/prilezitostni.jpg);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+padding: 70px;  //nevím jestli není blbost, dělat to paddingem, ale height stávkuje
+width: 100%;
+height: 100%;
+}
+
+// menu
+
+.navigation{
+display: grid;
+grid-template-columns: 1fr auto;
+margin: 10px 0;
+align-items: center;
+margin-left: 15px;
+}
+
+.menu {
+list-style: none;
+text-transform: uppercase;
+margin-bottom: 0;
+margin-top: 0;
+}
+
+.menu a{
+text-decoration: none;
+color: black;
+
+}
+
+.menu li{
+display: inline-block;
+padding: 0 15px;
+font-size: 20px;
+}
+
+.logo{
+width: 100%;
+max-width: 60px;
+}
+
+.h2-floral{
+font-size: 42px;
+color: white;
+margin-bottom: 0;
+text-shadow: 1px 1px 4px rgb(15 15 15);
+}
+
+
+
+.h2-floral:before,
+.h2-floral:after {
+content: "";
+height: 1px;
+display: inline-block;
+width: 40px;
+background-color: white;
+margin: 10px 25px;
+box-shadow: 1px 1px 4px rgb(15 15 15);
+}

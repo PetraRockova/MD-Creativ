@@ -1,0 +1,34 @@
+@use 'webstyle';
+
+
+.all-services img {
+width: 100%;
+max-width: 400px;
+box-shadow: webstyle.$shadow;
+}
+
+.wedd, .company, .occasionall, .funeral {
+margin-bottom: 80px;
+gap: 15px;
+justify-items: center;
+justify-content: center;
+}
+
+
+.occasionall, .funeral {
+display: grid;
+grid-template-columns: 350px 400px;
+}
+
+.wedd, .company{
+display: grid;
+grid-template-columns: 400px 350px;
+}
+
+.occasionall p, .wedd p, .funeral p, .company p{
+margin: 0;
+}
+
+.text{
+align-self:center;
+}

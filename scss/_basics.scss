@@ -1,0 +1,57 @@
+@use 'webstyle';
+
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+
+body {
+margin: 0;
+font-size: 16px;
+line-height: 1.5;
+font-family: webstyle.$body-font;
+color: #242424;
+text-align: center;
+}
+
+main{
+max-width: 1000px;
+margin-left: auto;
+margin-right: auto;
+}
+
+
+h1{
+font-size: 90px;
+font-family: webstyle.$h1-font;
+font-weight: normal;
+margin-bottom: 0;
+margin-top: 0;
+color: white;
+text-shadow: 1px 1px 4px rgb(15 15 15);
+}
+
+h2{
+font-size: 50px;
+color: webstyle.$break-color;
+font-family: webstyle.$h2-font;
+font-weight: normal;
+margin-top: 0;
+}
+
+h3{
+margin-top: 0;
+margin-bottom: 16px;
+}
+
+.h2-original{
+margin: 40px 0;
+}
+
+.h2-order, .h2-aboutme, .h2-work, .h2-services, .h2-reference{
+margin: 40px 0 20px 0;
+}
+
+footer{
+text-align: center;
+margin: 40px 0 20px 0;
+color: rgb(158, 156, 156);
+}
