@@ -91,6 +91,10 @@ footer {
     margin: 10px 25px;
   }
 
+  .h2-floral {
+    font-size: 42px;
+  }
+
   h2 {
     font-size: 50px;
   }
@@ -106,8 +110,8 @@ footer {
     font-size: 90px;
   }
 
-  .h2-floral {
-    font-size: 42px;
+  h2 {
+    font-size: 60px;
   }
 }
 header {
@@ -115,9 +119,11 @@ header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 70px;
   width: 100%;
-  height: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .navigation {
@@ -539,11 +545,12 @@ iframe {
 .submit, .want-flowers {
   padding: 12px 40px;
   margin-bottom: 20px;
-  background-color: #c7a0b5;
-  border: 1px solid #c7a0b5;
-  box-shadow: #d8c8d1 2px 2px 3px;
-  font-size: 18px;
+  background-color: #e9c4d7;
+  border: 1px solid #e9c4d7;
+  box-shadow: #b6849f 2px 2px 3px;
+  font-size: 20px;
   font-family: "Quicksand", sans-serif;
+  text-shadow: 1px 1px 1px #eae8e8;
 }
 
 .want-flowers {
