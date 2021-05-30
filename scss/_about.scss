@@ -4,19 +4,31 @@
 width: 100%;
 align-self: end;
 box-shadow: webstyle.$pic-shadow;  
-padding: 15px;
+padding: webstyle.$frame-padding;
+}
+
+.aboutme-matej{
+max-width: 450px;
 }
 
 .aboutme p{
 margin-bottom: 30px;
 }
 
-.aboutme{
-margin-bottom: 30px;
+.aboutme-first, .aboutme-third{
+display: none;
+}
+
+@media screen and (min-width:640px){
+
+.aboutme-first, .aboutme-third{
+display: block;
 }
 
 .aboutme-photo{
 display: grid;
 grid-template-columns: repeat(3, 1fr);
 gap: 6px;
+}
+
 }

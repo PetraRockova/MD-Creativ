@@ -10,7 +10,7 @@ margin-top: 15px;
 
 .contact-hours-map-wrap, .contact-social-wrap, .contact-contactform {
 box-shadow: webstyle.$pic-shadow;
-padding:15px;
+padding:webstyle.$frame-padding;
 margin: 40px auto;
 width: 100%; 
 max-width: 800px;
