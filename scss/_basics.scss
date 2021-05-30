@@ -13,9 +13,9 @@ text-align: center;
 }
 
 main{
-max-width: 1000px;
-margin-left: auto;
-margin-right: auto;
+max-width: 1100px;
+margin-left: 20px;
+margin-right: 20px;
 }
 
 // -----------------------------------------------------------------------------
@@ -31,7 +31,7 @@ text-shadow: 1px 1px 4px rgb(15 15 15);
 }
 
 h2{
-font-size: 50px;
+font-size: 40px;
 color: webstyle.$break-color;
 font-family: webstyle.$h2-font;
 font-weight: normal;
@@ -54,7 +54,7 @@ text-shadow: 1px 1px 4px rgb(15 15 15);
 .h2-floral:after {
 content: "";
 height: 1px;
-display: inline-block;
+display: block;
 width: 30px;
 background-color: white;
 margin: 10px 25px;
@@ -85,10 +85,23 @@ color: rgb(158, 156, 156);
 }
 
 
-@media screen and (min-width:640px){}
+@media screen and (min-width:640px){
+
+
+
+.h2-floral:before,
+.h2-floral:after {
+display: inline-block;
+margin: 10px 25px;
+}
 
 @media screen and (min-width:1000px){
 
+main{
+max-width: 1100px;
+margin-left: auto;
+margin-right: auto;
+}
 
 h1{
 font-size: 90px;
@@ -102,8 +115,7 @@ font-size: 50px;
 font-size: 42px;
 }
 
-.h2-floral:before, .h2-floral:after {
-font-size: 40px;
+
 }
 
 

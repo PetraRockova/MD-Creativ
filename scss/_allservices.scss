@@ -4,7 +4,7 @@
 .all-services img {
 width: 100%;
 max-width: 450px;
-box-shadow: rgb(217,217,214) 0 0 3px 1px;
+box-shadow: webstyle.$pic-shadow;
 padding: 15px; 
 }
 
@@ -39,7 +39,6 @@ gap: 6px;
 
 .all-services img {
 max-width: 450px;
-box-shadow: rgb(217,217,214) 0 0 3px 1px;
 }
 
 .wedd, .company, .occasionall, .funeral {
