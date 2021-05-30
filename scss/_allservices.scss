@@ -3,8 +3,43 @@
 
 .all-services img {
 width: 100%;
-max-width: 400px;
-box-shadow: webstyle.$shadow;
+max-width: 450px;
+box-shadow: rgb(217,217,214) 0 0 3px 1px;
+padding: 15px; 
+}
+
+.occasionall p, .wedd p, .funeral p, .company p{
+margin: 0;
+}
+
+.text{
+align-self:center;
+}
+
+.wedd, .company, .occasionall, .funeral{
+margin-bottom: 40px;
+}
+
+@media screen and (min-width:640px){
+
+.all-services img {
+width: 100%;
+max-width: 350px;
+}
+
+.all-services {
+display: grid;
+grid-template-columns: 50% 50%;
+gap: 6px;
+}
+}
+
+@media screen and (min-width:1000px){
+
+
+.all-services img {
+max-width: 450px;
+box-shadow: rgb(217,217,214) 0 0 3px 1px;
 }
 
 .wedd, .company, .occasionall, .funeral {
@@ -15,20 +50,4 @@ justify-content: center;
 }
 
 
-.occasionall, .funeral {
-display: grid;
-grid-template-columns: 350px 400px;
-}
-
-.wedd, .company{
-display: grid;
-grid-template-columns: 400px 350px;
-}
-
-.occasionall p, .wedd p, .funeral p, .company p{
-margin: 0;
-}
-
-.text{
-align-self:center;
 }

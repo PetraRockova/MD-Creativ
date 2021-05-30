@@ -21,12 +21,8 @@ main {
   margin-right: auto;
 }
 
-.thanks a {
-  display: none;
-}
-
 h1 {
-  font-size: 90px;
+  font-size: 70px;
   font-family: "Italiana", serif;
   font-weight: normal;
   margin-bottom: 0;
@@ -48,6 +44,24 @@ h3 {
   margin-bottom: 16px;
 }
 
+.h2-floral {
+  font-size: 32px;
+  color: white;
+  margin-bottom: 0;
+  text-shadow: 1px 1px 4px #0f0f0f;
+}
+
+.h2-floral:before,
+.h2-floral:after {
+  content: "";
+  height: 1px;
+  display: inline-block;
+  width: 30px;
+  background-color: white;
+  margin: 10px 25px;
+  box-shadow: 1px 1px 4px #0f0f0f;
+}
+
 .h2-original {
   margin: 40px 0;
 }
@@ -56,12 +70,37 @@ h3 {
   margin: 40px 0 20px 0;
 }
 
+.h2-thanks {
+  margin: 80px 0 20px 0;
+}
+
+.h2-thanks2 {
+  margin-bottom: 80px;
+}
+
 footer {
   text-align: center;
   margin: 40px 0 20px 0;
   color: #9e9c9c;
 }
 
+@media screen and (min-width: 1000px) {
+  h1 {
+    font-size: 90px;
+  }
+
+  h2 {
+    font-size: 50px;
+  }
+
+  .h2-floral {
+    font-size: 42px;
+  }
+
+  .h2-floral:before, .h2-floral:after {
+    font-size: 40px;
+  }
+}
 header {
   background-image: linear-gradient(rgba(100, 100, 100, 0.4), rgba(100, 100, 100, 0.4)), url(../images/prilezitostni.jpg);
   background-size: cover;
@@ -75,7 +114,7 @@ header {
 .navigation {
   display: grid;
   grid-template-columns: 1fr auto;
-  margin: 10px 0;
+  margin: 6px 0;
   align-items: center;
   margin-left: 15px;
 }
@@ -99,6 +138,10 @@ header {
   text-shadow: 1px 1px 1px #eae8e8;
 }
 
+.thanks a {
+  display: none;
+}
+
 .menu a:active {
   border-bottom: 1px solid #a72d70;
 }
@@ -112,142 +155,172 @@ header {
   max-width: 60px;
 }
 
-.h2-floral {
-  font-size: 42px;
-  color: white;
-  margin-bottom: 0;
-  text-shadow: 1px 1px 4px #0f0f0f;
-}
+@media screen and (min-width: 1000px) {
+  .navigation {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    margin: 6px 0;
+    align-items: center;
+    margin-left: 15px;
+  }
 
-.h2-floral:before,
-.h2-floral:after {
-  content: "";
-  height: 1px;
-  display: inline-block;
-  width: 40px;
-  background-color: white;
-  margin: 10px 25px;
-  box-shadow: 1px 1px 4px #0f0f0f;
-}
+  .menu {
+    list-style: none;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
 
-.thanks a {
+  .menu a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .menu li {
+    display: inline-block;
+    padding: 0 15px;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px #eae8e8;
+  }
+
+  .menu a:active {
+    border-bottom: 1px solid #a72d70;
+  }
+
+  .menu a:hover {
+    border-bottom: 1px solid #a72d70;
+  }
+
+  .logo {
+    width: 100%;
+    max-width: 60px;
+  }
+
+  /*
+  .thanks a{
   display: none;
+  }
+  */
 }
-
-.texts {
-  margin-top: 45px;
-}
-
-.first-ref, .second-ref, .third-ref, .fourth-ref, .fifth-ref {
-  width: 450px;
-  margin-bottom: 0px;
-}
-
-.top-refs, .bottom-refs p {
-  margin: 6px 0;
-}
-
 .top-refs img, .bottom-refs img {
   width: 100%;
   max-width: 240px;
 }
 
-.top-refs {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 4px;
+.first-photo, .fifth-photo, .sixth-photo, .seventh-photo {
+  display: none;
 }
 
 .pics {
+  margin-top: 20px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, auto);
-  gap: 4px;
+  gap: 6px;
+  grid-template-columns: repeat(3, 33%);
 }
 
-.first-photo {
-  grid-column: 1;
-  grid-row: 1/4;
-  align-self: center;
-  justify-self: end;
-  padding-bottom: 40px;
-}
+@media screen and (min-width: 1000px) {
+  .texts {
+    margin-top: 45px;
+  }
 
-.second-photo {
-  grid-column: 2;
-  grid-row: 1;
-}
+  .first-ref, .second-ref, .third-ref, .fourth-ref, .fifth-ref {
+    width: 450px;
+    margin-bottom: 0px;
+  }
 
-.third-photo {
-  grid-column: 2;
-  grid-row: 2;
-}
+  .top-refs, .bottom-refs p {
+    margin: 6px 0;
+  }
 
-.bottom-refs {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, auto);
-  gap: 4px;
-  margin-top: 40px;
-}
+  .top-refs img, .bottom-refs img {
+    width: 100%;
+    max-width: 240px;
+  }
 
-.fourth-photo {
-  grid-column: 2;
-  grid-row: 3;
-}
+  .top-refs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4px;
+  }
 
-.fourth-ref {
-  grid-column: 3;
-  grid-row: 1;
-  align-self: end;
-}
+  .pics {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 4px;
+  }
 
-.fifth-ref {
-  grid-column: 3;
-  grid-row: 2;
-}
+  .first-photo, .fifth-photo, .sixth-photo, .seventh-photo {
+    display: block;
+  }
 
-.fifth-photo {
-  grid-column: 1;
-  grid-row: 1;
-  align-self: end;
-}
+  .first-photo {
+    grid-column: 1;
+    grid-row: 1/4;
+    align-self: center;
+    justify-self: end;
+    padding-bottom: 40px;
+  }
 
-.sixth-photo {
-  grid-column: 1;
-  grid-row: 2;
-}
+  .second-photo {
+    grid-column: 2;
+    grid-row: 1;
+  }
 
-.seventh-photo {
-  grid-column: 2;
-  grid-row: 1/3;
-}
+  .third-photo {
+    grid-column: 2;
+    grid-row: 2;
+  }
 
-.fifth-photo, .sixth-photo {
-  justify-self: end;
-}
+  .bottom-refs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 4px;
+    margin-top: 40px;
+  }
 
+  .fourth-photo {
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  .fourth-ref {
+    grid-column: 3;
+    grid-row: 1;
+    align-self: end;
+  }
+
+  .fifth-ref {
+    grid-column: 3;
+    grid-row: 2;
+  }
+
+  .fifth-photo {
+    grid-column: 1;
+    grid-row: 1;
+    align-self: end;
+  }
+
+  .sixth-photo {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .seventh-photo {
+    grid-column: 2;
+    grid-row: 1/3;
+  }
+
+  .fifth-photo, .sixth-photo {
+    justify-self: end;
+  }
+}
 .all-services img {
   width: 100%;
-  max-width: 400px;
-  box-shadow: #c7c5c5 2px 2px 3px;
-}
-
-.wedd, .company, .occasionall, .funeral {
-  margin-bottom: 80px;
-  gap: 15px;
-  justify-items: center;
-  justify-content: center;
-}
-
-.occasionall, .funeral {
-  display: grid;
-  grid-template-columns: 350px 400px;
-}
-
-.wedd, .company {
-  display: grid;
-  grid-template-columns: 400px 350px;
+  max-width: 450px;
+  box-shadow: #d9d9d6 0 0 3px 1px;
+  padding: 15px;
 }
 
 .occasionall p, .wedd p, .funeral p, .company p {
@@ -258,6 +331,35 @@ header {
   align-self: center;
 }
 
+.wedd, .company, .occasionall, .funeral {
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 640px) {
+  .all-services img {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .all-services {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 6px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .all-services img {
+    max-width: 450px;
+    box-shadow: #d9d9d6 0 0 3px 1px;
+  }
+
+  .wedd, .company, .occasionall, .funeral {
+    margin-bottom: 80px;
+    gap: 15px;
+    justify-items: center;
+    justify-content: center;
+  }
+}
 .aboutme img {
   width: 100%;
   align-self: end;
@@ -411,24 +513,42 @@ header {
 }
 
 .mainpage-values img {
-  width: 100%;
+  width: 30%;
 }
 
 .mainpage-services {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 10px;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
-.mainpage-values {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  justify-items: center;
+.main {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
-.attitude, .originality, .profesionality {
-  max-width: 240px;
-  width: 100%;
+@media screen and (min-width: 1000px) {
+  .mainpage-services {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 60px;
+  }
+
+  .mainpage-values {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-items: center;
+  }
+
+  .attitude, .originality, .profesionality {
+    max-width: 240px;
+    width: 100%;
+  }
+
+  .mainpage-values img {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
