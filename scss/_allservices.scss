@@ -12,10 +12,6 @@ padding: webstyle.$frame-padding;
 margin: 0;
 }
 
-.text{
-align-self:center;
-}
-
 .wedd, .company, .occasionall, .funeral{
 margin-bottom: 40px;
 }
@@ -43,10 +39,5 @@ max-width: 450px;
 
 .wedd, .company, .occasionall, .funeral {
 margin-bottom: 80px;
-gap: 15px;
-justify-items: center;
-justify-content: center;
 }
-
-
 }

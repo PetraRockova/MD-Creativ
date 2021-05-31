@@ -2,7 +2,6 @@
 
 .aboutme img{
 width: 100%;
-align-self: end;
 box-shadow: webstyle.$pic-shadow;  
 padding: webstyle.$frame-padding;
 }
@@ -31,4 +30,7 @@ grid-template-columns: repeat(3, 1fr);
 gap: 6px;
 }
 
+.aboutme img{
+align-self: end;
+}
 }

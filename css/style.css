@@ -17,16 +17,14 @@ body {
 
 main {
   max-width: 1100px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 0 20px 50px 20px;
 }
 
 h1 {
   font-size: 70px;
   font-family: "Italiana", serif;
   font-weight: normal;
-  margin-bottom: 0;
-  margin-top: 0;
+  margin: 0;
   color: white;
   text-shadow: 1px 1px 4px #0f0f0f;
 }
@@ -40,8 +38,7 @@ h2 {
 }
 
 h3 {
-  margin-top: 0;
-  margin-bottom: 16px;
+  margin: 0;
 }
 
 .h2-floral {
@@ -113,6 +110,10 @@ footer {
   h2 {
     font-size: 60px;
   }
+
+  .h2-reference {
+    margin-bottom: 0;
+  }
 }
 header {
   background-image: linear-gradient(rgba(100, 100, 100, 0.4), rgba(100, 100, 100, 0.4)), url(../images/prilezitostni.jpg);
@@ -129,8 +130,7 @@ header {
 .menu {
   list-style: none;
   text-transform: uppercase;
-  margin-bottom: 0;
-  margin-top: 0;
+  margin: 0;
   padding-left: 0;
 }
 
@@ -140,7 +140,7 @@ header {
 }
 
 .menu li:hover {
-  background-color: #e9c4d7;
+  background-color: #f1e7ec;
 }
 
 .menu li {
@@ -148,7 +148,7 @@ header {
   padding: 4px 0;
   font-size: 18px;
   text-shadow: 1px 1px 1px #eae8e8;
-  border-bottom: 1px solid #dfdddd;
+  border-bottom: 1px solid #f5f4f4;
 }
 
 .thanks a {
@@ -213,10 +213,6 @@ header {
   display: none;
 }
 
-.second-photo, .third-photo, .fourth-photo {
-  justify-self: start;
-}
-
 .top-pics {
   margin-top: 20px;
   display: grid;
@@ -225,10 +221,14 @@ header {
   justify-items: center;
 }
 
+.second-photo, .third-photo, .fourth-photo {
+  justify-self: start;
+}
+
 @media screen and (min-width: 1000px) {
   .top-texts {
-    margin-top: 45px;
     justify-self: center;
+    align-self: center;
   }
 
   .bottom-texts {
@@ -238,10 +238,10 @@ header {
 
   .first-ref, .second-ref, .third-ref, .fourth-ref, .fifth-ref {
     width: 450px;
-    margin-bottom: 0px;
+    margin-bottom: 20px;
   }
 
-  .top-refs, .bottom-refs p {
+  .top-refs p, .bottom-refs p {
     margin: 6px 0;
   }
 
@@ -331,10 +331,6 @@ header {
   margin: 0;
 }
 
-.text {
-  align-self: center;
-}
-
 .wedd, .company, .occasionall, .funeral {
   margin-bottom: 40px;
 }
@@ -358,14 +354,10 @@ header {
 
   .wedd, .company, .occasionall, .funeral {
     margin-bottom: 80px;
-    gap: 15px;
-    justify-items: center;
-    justify-content: center;
   }
 }
 .aboutme img {
   width: 100%;
-  align-self: end;
   box-shadow: #d9d9d6 0 0 3px 1px;
   padding: 10px;
 }
@@ -391,6 +383,10 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 6px;
+  }
+
+  .aboutme img {
+    align-self: end;
   }
 }
 .work-photo img {
@@ -439,14 +435,6 @@ header {
   max-width: 800px;
 }
 
-.contact-contactform {
-  margin-bottom: 50px;
-}
-
-.contact-hours-map-wrap h2, .contact-social-wrap h2, .contact-contactform h2 {
-  font-size: 40px;
-}
-
 .social img {
   width: 80px;
   margin: 0 10px;
@@ -472,6 +460,10 @@ iframe {
   display: block;
 }
 
+.form-field {
+  width: 100%;
+}
+
 .form-field input {
   padding: 10px;
   width: 100%;
@@ -488,10 +480,6 @@ iframe {
   width: 100%;
   height: 200px;
   border: 1px solid #a5a4a4;
-}
-
-.form-field {
-  width: 100%;
 }
 
 .form-field input:focus, .form-field-area textarea:focus {
@@ -535,11 +523,11 @@ iframe {
 }
 .submit, .want-flowers {
   padding: 12px 6px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   width: 40%;
   max-width: 300px;
-  background-color: #e9c4d7;
-  border: 1px solid #e9c4d7;
+  background-color: #f1e7ec;
+  border: 1px solid #f1e7ec;
   box-shadow: #b6849f 2px 2px 3px;
   font-size: 18px;
   font-family: "Quicksand", sans-serif;
@@ -571,29 +559,27 @@ iframe {
 }
 
 .mainpage-services {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
-.mainpage-values {
-  margin-top: 20px;
+.first-service, .second-service, .third-service {
+  margin-bottom: 40px;
 }
 
 @media screen and (min-width: 640px) {
   .mainpage-services {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin-bottom: 20px;
   }
 
-  .mainpage-services img {
-    width: 90%;
+  .third-service {
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1000px) {
   .mainpage-services {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    margin-bottom: 20px;
     gap: 6px;
   }
 
@@ -614,5 +600,9 @@ iframe {
 
   .mainpage-services img {
     width: 100%;
+  }
+
+  .first-service, .second-service {
+    margin-bottom: 0;
   }
 }/*# sourceMappingURL=style.css.map */

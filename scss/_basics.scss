@@ -14,8 +14,7 @@ text-align: center;
 
 main{
 max-width: 1100px;
-margin-left: 20px;
-margin-right: 20px;
+margin: 0 20px 50px 20px;
 }
 
 // -----------------------------------------------------------------------------
@@ -24,8 +23,7 @@ h1{
 font-size: 70px;
 font-family: webstyle.$h1-font;
 font-weight: normal;
-margin-bottom: 0;
-margin-top: 0;
+margin: 0;
 color: white;
 text-shadow: 1px 1px 4px rgb(15 15 15);
 }
@@ -39,8 +37,7 @@ margin-top: 0;
 }
 
 h3{
-margin-top: 0;
-margin-bottom: 16px;
+margin: 0;
 }
 
 .h2-floral{
@@ -117,7 +114,10 @@ font-size: 90px;
 h2{
 font-size: 60px;
 }
-    
+
+.h2-reference{
+margin-bottom: 0;
+}
 }
 
 
