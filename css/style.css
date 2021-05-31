@@ -148,7 +148,7 @@ header {
   padding: 4px 0;
   font-size: 18px;
   text-shadow: 1px 1px 1px #eae8e8;
-  border-bottom: 1px solid silver;
+  border-bottom: 1px solid #dfdddd;
 }
 
 .thanks a {
@@ -178,7 +178,7 @@ header {
 
   .menu li {
     padding: 0 10px;
-    font-size: 18px;
+    font-size: 17px;
   }
 
   .menu li {
@@ -539,13 +539,15 @@ iframe {
   background-color: #e9c4d7;
   border: 1px solid #e9c4d7;
   box-shadow: #b6849f 2px 2px 3px;
-  font-size: 20px;
+  font-size: 18px;
   font-family: "Quicksand", sans-serif;
   text-shadow: 1px 1px 1px #eae8e8;
 }
 
 .want-flowers {
-  padding: 12px 80px;
+  padding-top: 12px;
+  width: 40%;
+  max-width: 300px;
 }
 
 .submit {
@@ -557,6 +559,11 @@ iframe {
   background-color: #ceb6c3;
 }
 
+@media screen and (min-width: 640px) {
+  .submit, .want-flowers {
+    font-size: 20px;
+  }
+}
 .mainpage-services img {
   width: 90%;
   box-shadow: #d9d9d6 0 0 3px 1px;

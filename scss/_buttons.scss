@@ -7,13 +7,15 @@ margin-bottom: 20px;
 background-color: webstyle.$button-color;
 border: 1px solid webstyle.$button-color;
 box-shadow: webstyle.$button-shadow;
-font-size: 20px;
+font-size: 18px;
 font-family: webstyle.$body-font;
 text-shadow: 1px 1px 1px #eae8e8;
 }
 
 .want-flowers{
-padding: 12px 80px;
+padding-top: 12px;
+width: 40%;
+max-width: 300px;
 }
 
 
@@ -26,3 +28,9 @@ justify-self: center;
 background-color:rgb(206, 182, 195);
 }
 
+@media screen and (min-width: 640px){
+
+.submit, .want-flowers{
+font-size: 20px;
+}
+}
