@@ -534,20 +534,16 @@ iframe {
   }
 }
 .submit, .want-flowers {
-  padding: 12px 40px;
+  padding: 12px 6px;
   margin-bottom: 20px;
+  width: 40%;
+  max-width: 300px;
   background-color: #e9c4d7;
   border: 1px solid #e9c4d7;
   box-shadow: #b6849f 2px 2px 3px;
   font-size: 18px;
   font-family: "Quicksand", sans-serif;
   text-shadow: 1px 1px 1px #eae8e8;
-}
-
-.want-flowers {
-  padding-top: 12px;
-  width: 40%;
-  max-width: 300px;
 }
 
 .submit {
