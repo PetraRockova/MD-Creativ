@@ -55,7 +55,7 @@ h3 {
   display: block;
   width: 30px;
   background-color: white;
-  margin: 10px auto;
+  margin: 0 auto;
   box-shadow: 1px 1px 4px #0f0f0f;
 }
 
@@ -195,6 +195,7 @@ header {
 
   .menu a:hover {
     border-bottom: 1px solid #a72d70;
+    margin-top: 5px;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -391,6 +392,7 @@ header {
 }
 .work-photo img {
   width: 100%;
+  display: block;
 }
 
 .work-photo {
