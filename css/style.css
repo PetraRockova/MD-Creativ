@@ -177,16 +177,11 @@ header {
   }
 
   .menu li {
-    padding: 0 10px;
-    font-size: 17px;
-  }
-
-  .menu li {
     display: inline-block;
-    padding: 0 15px;
-    font-size: 18px;
     text-shadow: 1px 1px 1px #eae8e8;
     border-bottom: none;
+    padding: 0 10px;
+    font-size: 17px;
   }
 
   .menu li:hover {
@@ -195,12 +190,12 @@ header {
 
   .menu a:hover {
     border-bottom: 1px solid #a72d70;
-    margin-top: 5px;
   }
 }
 @media screen and (min-width: 1000px) {
   .menu li {
     font-size: 20px;
+    padding: 0 15px;
   }
 }
 .top-refs img, .bottom-refs img {
